@@ -4,8 +4,8 @@ import datetime
 import schedule
 import time
 
-source_dir =
-destination_dir =
+source_dir = Users/jeremyunderwood/Documents/pictures
+destination_dir = Users/jeremyunderwood/Documents/backups
 
 def copy_folder_to_directory(source, dest):
   today = datetime.date.today()
@@ -16,3 +16,5 @@ def copy_folder_to_directory(source, dest):
     print(f'Folder copied to: {dest_dir}')
   except FileExistsError:
     print(f'Folder already exists in : {dest}')
+
+copy_folder_to_directory(source_dir, destination_dir)
